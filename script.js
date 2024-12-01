@@ -13,6 +13,7 @@ const getSum = () => {
   const price = row.insertCell(1);
   totalPrice.textContent = "Total Price";
   price.textContent = `${totalSum}`;
+ row.setAttribute('id' , 'ans');
 };
 
 getSumBtn.addEventListener("click", getSum);
